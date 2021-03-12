@@ -1,11 +1,23 @@
 {
   "hosting": {
     "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [],   
     "rewrites": [
       {
         "source": "**",
-        "function": "gazarWeb"
+        "function": "gazarWeb",
+        "destination": "/index.html"
       }
     ]
   }
 }
+
+
+
+
+
